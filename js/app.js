@@ -1,13 +1,13 @@
 'use strict';
 
-var portfolioApp = angular.module("portfolio", [
-	'ng-route',
+var portfolioApp = angular.module("portfolioApp", [
+	'ngRoute',
 	'portfolioControllers'
 	 ]);
 
-portfolioApp.config(['$routeprovider',
-	function($routeprovider){
-		$routeprovider.
+portfolioApp.config(['$routeProvider',
+	function($routeProvider){
+		$routeProvider.
 		when('/', {
 			templateUrl: 'partials/main.html',
             controller: 'MainCtrl'
