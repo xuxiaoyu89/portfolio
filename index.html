@@ -4,13 +4,22 @@
     <title>Xiaoyu's portfolio</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular-route.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/default.css">
     <script src="js/app.js"></script>
     <script src="js/ctrl_main.js"></script>
 </head>
 
 <body>
-	<p>hello</p>
+	<div id="header">
+		<div class="dirName">Main</div>
+		<div class="dirName">Work</div>
+		<div class="dirName">Life</div>
+	</div>
     <div ng-view></div>
+
+    <div id="footer">
+    	<p>Xiaoyu Xu, New York University</p>
+    </div>
 </body>
 
 </html>
