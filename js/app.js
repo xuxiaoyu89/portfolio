@@ -12,6 +12,10 @@ portfolioApp.config(['$routeProvider',
 			templateUrl: 'partials/main.html',
             controller: 'MainCtrl'
 		}).
+		when('/Projects', {
+			templateUrl: 'partials/projects.html',
+			controller: 'ProjectsCtrl'
+		}).
 		otherwise({
 			redirectTo: '/'
 		});

@@ -4,20 +4,35 @@
     <title>Xiaoyu's portfolio</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="js/app.js"></script>
     <script src="js/ctrl_main.js"></script>
 </head>
 
 <body>
-	<div id="header">
-		<div class="dirName">Main</div>
-		<div class="dirName">Work</div>
-		<div class="dirName">Life</div>
+	<div id="header_container">
+		<div id="header" class="center">
+			<div class="dirName">
+				<a href="#/Home">Home</a>
+			</div>
+			<div class="dirName">
+				<a href="#/Projects">Projects</a>
+			</div>
+			<div class="dirName">
+				<a href="#/Life">Life</a>
+			</div>
+		</div>
 	</div>
-    <div ng-view></div>
 
-    <div id="footer">
+	<div id="content">
+		<div ng-view></div>
+	</div>
+
+    <div id="footer" class="center">
     	<p>Xiaoyu Xu, New York University</p>
     </div>
 </body>
