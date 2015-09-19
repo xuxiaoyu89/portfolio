@@ -37,6 +37,12 @@ body {
 	min-height: 550px;
 }
 
+#intro {
+	width: 80%;
+	height: 550px;
+}
+
+
 #footer {
 	text-align: center;
 	font-family: sans-serif;
