@@ -12,7 +12,7 @@ portfolioApp.config(['$routeProvider',
 			templateUrl: 'partials/main.html',
             controller: 'MainCtrl'
 		}).
-		when('/Projects', {
+		when('#/Projects', {
 			templateUrl: 'partials/projects.html',
 			controller: 'ProjectsCtrl'
 		}).
