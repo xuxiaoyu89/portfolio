@@ -52,6 +52,7 @@ body {
 	width: 80%;
 	min-height: 700px;
 	margin: auto;
+	border-radius: 15px;
 }
 
 #intro {
