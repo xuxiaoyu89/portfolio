@@ -8,6 +8,10 @@ var portfolioApp = angular.module("portfolioApp", [
 portfolioApp.config(['$routeProvider',
 	function($routeProvider){
 		$routeProvider.
+		when('/', {
+			templateUrl: 'partials/main.html',
+            controller: 'MainCtrl'
+		}).
 		when('/Home', {
 			templateUrl: 'partials/main.html',
             controller: 'MainCtrl'
