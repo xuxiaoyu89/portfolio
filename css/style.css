@@ -51,13 +51,14 @@ body {
 #content {
 	width: 80%;
 	min-height: 700px;
+	margin: auto;
 }
 
 #intro {
-	width: 80%;
-	height: 550px;
+	width: 60%;
+	height: 400px;
 	background: white;
-	opacity: 0.6;
+	opacity: 0.8;
 	text-align: center;
 	margin: auto;
 }
