@@ -20,9 +20,9 @@ portfolioApp.config(['$routeProvider',
 			templateUrl: 'partials/projects.html',
 			controller: 'ProjectsCtrl'
 		}).
-		when('/Life', {
-			templateUrl: 'partials/life.html',
-			controller: 'LifeCtrl'
+		when('/Footprint', {
+			templateUrl: 'partials/footprint.html',
+			controller: 'FootprintCtrl'
 		}).
 		otherwise({
 			redirectTo: '/'
