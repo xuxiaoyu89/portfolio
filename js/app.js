@@ -16,6 +16,10 @@ portfolioApp.config(['$routeProvider',
 			templateUrl: 'partials/main.html',
             controller: 'MainCtrl'
 		}).
+		when('/About', {
+			templateUrl: 'partials/about.html',
+            controller: 'AboutCtrl'
+		}).
 		when('/Projects', {
 			templateUrl: 'partials/projects.html',
 			controller: 'ProjectsCtrl'
@@ -23,6 +27,14 @@ portfolioApp.config(['$routeProvider',
 		when('/Footprint', {
 			templateUrl: 'partials/footprint.html',
 			controller: 'FootprintCtrl'
+		}).
+		when('/Blog', {
+			templateUrl: 'partials/blog.html',
+			controller: 'BlogCtrl'
+		}).
+		when('/Contact', {
+			templateUrl: 'partials/contact.html',
+			controller: 'ContactCtrl'
 		}).
 		otherwise({
 			redirectTo: '/'
