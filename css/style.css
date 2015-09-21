@@ -2,7 +2,8 @@ body, .main{
 	width: 100%;
 	height: 100%;
 	background: url("../images/squirrel.jpg") no-repeat top left;
-	background-size: 1600px 1060px;
+	background-size: 100%;
+	background-attachment: fixed;
 }
 
 
@@ -10,7 +11,8 @@ body, .footprint {
 	width: 100%;
 	height: 100%;
 	background: url("../images/birds.jpg") no-repeat top left;
-	background-size: 1600px 1060px;
+	background-size: 100%;
+	background-attachment: fixed;
 }
 
 body, .project {
@@ -18,6 +20,7 @@ body, .project {
 	height: 100%;
 	background: url("../images/woods.jpg") no-repeat top left;
 	background-size: 100%;
+	background-attachment: fixed;
 }
 
 body, .other{
