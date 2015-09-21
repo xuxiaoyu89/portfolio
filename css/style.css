@@ -89,10 +89,11 @@ body, .other{
 
 .project {
 	width: 800px;
-	height: 100px;
+	height: 320px;
 	background: white;
 	opacity: 0.85;
-	margin: 10px, auto;
+	margin: auto;
+	display: block;
 }
 
 .project_thumbnail {
