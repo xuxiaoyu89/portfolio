@@ -6,7 +6,6 @@ body, .main{
 	background-attachment: fixed;
 }
 
-
 body, .footprint {
 	width: 100%;
 	height: 100%;
@@ -88,6 +87,31 @@ body, .other{
 	border-radius: 30px;
 }
 
+.project {
+	width: 800px;
+	height: 100px;
+	background: white;
+	opacity: 0.85;
+	margin: 10px, auto;
+}
+
+.project_thumbnail {
+	width: 60%;
+	height: 100%;
+	background: #8A00E6;
+	opacity: 0.6;
+	padding: 10px;
+	display: inline-block;
+}
+
+.project_discription {
+	width: 40%;
+	height: 100%;
+	background: #8A00E6;
+	opacity: 0.6;
+	padding: 10px;
+	display: inline-block;
+}
 
 #footer {
 	width: 100%;
