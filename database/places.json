@@ -1,0 +1,31 @@
+{
+    "places":[
+        {
+            "place":"arches", 
+            "lat": "38.7327752",
+            "lng": "-109.5921583",
+            "time": "2013-5-28",
+            "description": "trip to the west.",
+            "pictures": 1,
+            "link": ""
+        },
+        {
+            "place":"canyonlands", 
+            "lat": "38.3268735",
+            "lng": "-109.8804532",
+            "time": "2013-5-29",
+            "description": "trip to the west.",
+            "pictures": 1,
+            "link": ""
+        },
+        {
+            "place":"yosemite", 
+            "lat": "37.7458525",
+            "lng": "-119.5336292",
+            "time": "2013-6-3",
+            "description": "trip to the west.",
+            "pictures": 5,
+            "link": ""
+        }
+    ] 
+}

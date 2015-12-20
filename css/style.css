@@ -145,6 +145,13 @@ a:link {
 	text-align: center;
 }
 
+#map {
+	height: 350px;
+	width: 900px;
+	margin: auto;
+}
+
+
 #blog_container {
 	width: 100%;
 	background: blue;
