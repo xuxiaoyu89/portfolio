@@ -16,7 +16,7 @@ portfolioControllers.controller("ProjectsCtrl",
 		$scope.msg = "hello, these are my projects.";
 		var target = document.getElementById('page-body');
 		target.className = "projects";
-		var projects = document.getElementsByClassName('project');
+		var projects = document.getElementsByClassName('graphic_project');
 		for (var i=0; i<projects.length; i++){
 			projects[i].addEventListener("mouseover", showDiscription);
 			projects[i].addEventListener("mouseout", hideDiscription);

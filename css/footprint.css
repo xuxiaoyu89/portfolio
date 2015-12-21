@@ -1,8 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Varela+Round);
 
 .slides {
-    padding: 0;
-    width: 600px;
+    padding: 30px;
+    background-color: rgba(255,255,255,0.4);
+    width: 900px;
     height: 600px;
     display: block;
     margin: 0 auto;
@@ -18,7 +19,9 @@
     -webkit-touch-callout: none;
 }
 
-.slides input { display: none; }
+.slides input { 
+    display: none; 
+}
 
 .slide-container { 
     display: inline-block; 
@@ -29,16 +32,15 @@
 .slide {
     top: 0;
     opacity: 0;
-
     height: 600px;
-    width: 600px;
+    width: 900px;
     display: block;
     text-align: center;
     position: absolute;
+    top: 30px;
     margin: auto;
     vertical-align: middle;
     transform: scale(0);
-
     transition: all .7s ease-in-out;
 }
 
@@ -53,15 +55,15 @@
     vertical-align: middle;
     margin: auto;
     max-height: 600px;
-    max-width: 600px;
+    max-width: 800px;
 }
 
 .nav label {
     width: 100px;
-    height: 30%;
+    height: 25%;
     display: none;
     position: absolute;
-    top: 200px;
+    top: 230px;
     opacity: 0;
     z-index: 9;
     cursor: pointer;
@@ -69,9 +71,9 @@
     transition: opacity .2s;
 
     color: #FFF;
-    font-size: 156pt;
+    font-size: 150pt;
     text-align: center;
-    line-height: 380px;
+    line-height: 150px;
     font-family: "Varela Round", sans-serif;
     background-color: rgba(255, 255, 255, .3);
     text-shadow: 0px 0px 15px rgb(119, 119, 119);
@@ -94,7 +96,7 @@ input:checked + .slide-container  .slide {
 input:checked + .slide-container .nav label { display: block; }
 
 .nav-dots {
-    width: 100%;
+    width: 900px;
     bottom: 9px;
     height: 11px;
     display: block;
