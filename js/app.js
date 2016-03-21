@@ -9,12 +9,8 @@ portfolioApp.config(['$routeProvider',
 	function($routeProvider){
 		$routeProvider.
 		when('/', {
-			templateUrl: 'partials/main.html',
-            controller: 'MainCtrl'
-		}).
-		when('/Home', {
-			templateUrl: 'partials/main.html',
-            controller: 'MainCtrl'
+			templateUrl: 'partials/about.html',
+            controller: 'AboutCtrl'
 		}).
 		when('/About', {
 			templateUrl: 'partials/about.html',

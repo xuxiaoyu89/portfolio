@@ -1,63 +1,53 @@
-{{msg}}
-<!-- Time line feature -->
-<div id="blog_container">
-	<div id="timeline"></div>
-	<div id="blog_wrapper">
-		<div class="blog">
-			<div class="blog_time"></div>
-			<div class="blog_content">
-				<image class="blog_image" src="../images/projects/graphics/reflection.png">
-				<div class="blog_discription"></div>
+<div id="blog">
+	<div id="tags_wrapper">
+		<div id="tags">
+			<img id="tag_header" src="../images/tag.png">
+			<div class="tag" onclick="tagClicked(this)"><span style="cursor:default">all</span></div>
+			<div ng-repeat="tag in tags">
+				<div class="tag" onclick="tagClicked(this)"><span style="cursor:default">{{tag}}</span></div>
 			</div>
 		</div>
-		<div class="blog">
-			<div class="blog_time"></div>
-			<div class="blog_content">
-				<image class="blog_image" src="../images/projects/graphics/reflection.png">
-				<div class="blog_discription"></div>
+	</div>
+	<div id="timeline_wrapper">
+		<div id="timeline">
+			<img id="timeline_header" src="../images/time1.png">
+			<div ng-repeat="year in years">
+				<div class="timeline_node" onclick="nodeClicked(this)"><span class="timeline_time" style="cursor:default">{{year}}</span></div>
 			</div>
 		</div>
-		<div class="blog">
-			<div class="blog_time"></div>
-			<div class="blog_content">
-				<image class="blog_image" src="../images/projects/graphics/reflection.png">
-				<div class="blog_discription"></div>
+	</div>
+
+	<div ng-repeat="blog in blogs">
+		<div class="blog_container" ng-class="{'blog_hidden': blog.hiddenflag}">
+			<div class="blog_title">
+				<div class="title_title">{{blog.title}}</div>
+				<div class="title_date">{{blog.time}}</div>
+			</div>
+			<div class="blog_img_container">
+				<img class="blog_img" ng-src='{{blog.imgs[0]}}'>
+			</div>
+			<div class="blog_content_container">
+				<div class="blog_content">
+					{{blog.content}}
+				</div>
+			</div>
+			<div class="blog_infos">
+				<div class="blog_infos_container">
+					<div class="blog_info blog_tag">
+						<img class="blog_info_icon" src="../images/tag.png">
+						<div class="blog_info_info tag"><span style="cursor:default">{{blog.tag}}</span></div>
+					</div>
+					<div class="blog_info blog_time">
+						<img class="blog_info_icon" src="../images/calendar.png">
+						<div class="blog_info_info">{{blog.time}}</div>
+					</div>
+					<div class="blog_info blog_place">
+						<img class="blog_info_icon" src="../images/place.png">
+						<div class="blog_info_info">{{blog.place}}</div>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="blog">
-			<div class="blog_time"></div>
-			<div class="blog_content">
-				<image class="blog_image" src="../images/projects/graphics/reflection.png">
-				<div class="blog_discription"></div>
-			</div>
-		</div>
-		<div class="blog">
-			<div class="blog_time"></div>
-			<div class="blog_content">
-				<image class="blog_image" src="../images/projects/graphics/reflection.png">
-				<div class="blog_discription"></div>
-			</div>
-		</div>
-		<div class="blog">
-			<div class="blog_time"></div>
-			<div class="blog_content">
-				<image class="blog_image" src="../images/projects/graphics/reflection.png">
-				<div class="blog_discription"></div>
-			</div>
-		</div>
-		<div class="blog">
-			<div class="blog_time"></div>
-			<div class="blog_content">
-				<image class="blog_image" src="../images/projects/graphics/reflection.png">
-				<div class="blog_discription"></div>
-			</div>
-		</div>
-		<div class="blog">
-			<div class="blog_time"></div>
-			<div class="blog_content">
-				<image class="blog_image" src="../images/projects/graphics/reflection.png">
-				<div class="blog_discription"></div>
-			</div>
-		</div>
-	<div>
+	</div>
+	<div id="blog_tail"></div>
 </div>

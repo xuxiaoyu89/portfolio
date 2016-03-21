@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="portfolioApp">
 <head>
-    <title>Xiaoyu's portfolio</title>
+    <title>Xiaoyu's Website</title>
+    <link rel="shortcut icon" href="../images/x.ico">
     <script src="js/angular.min.js"></script>
     <script src="js/angular-route.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJ3veJzz6KNh4ycW9s0hii831HicaXNew"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">    
     <link rel="stylesheet" type="text/css" href="css/footprint.css">
     <link rel="stylesheet" type="text/css" href="css/project.css">
+    <link rel="stylesheet" type="text/css" href="css/blog.css">
     <script src="js/app.js"></script>
     <script src="js/ctrl_main.js"></script>
     <script src="js/ctrl_projects.js"></script>
@@ -15,31 +18,29 @@
     <script src="js/ctrl_about.js"></script>
     <script src="js/ctrl_contact.js"></script>
     <script src="js/ctrl_blog.js"></script>
+    <script src="js/helper.js"></script>
 </head>
 
 
 <body id="page-body" class="main">
-	<a class="image-link" href="https://500px.com/photo/122297505/journey-to-the-ocean-by-qh-yan">photo by Qinhua Yan</a>
+	<a class="background-image-link" href="https://500px.com/photo/122297505/journey-to-the-ocean-by-qh-yan">photo by Qinhua Yan</a>
 	<div id="header_container">
 		<div id="header" class="center">
-			<div class="direction">
-				<a class="dirName" href="#Home">Home</a>
-			</div>
-			<div class="direction">
-				<a class="dirName" href="#About">About Me</a>
-			</div>
-			<div class="direction">
-				<a class="dirName" href="#Projects">Projects</a>
-			</div>
-			<div class="direction">
-				<a class="dirName" href="#Footprint">Footprint</a>
-			</div>
-			<div class="direction">
-				<a class="dirName" href="#Blog">Blog</a>
-			</div>			
-			<div class="direction">
-				<a class="dirName" href="#Contact">Contact</a>
-			</div>
+			<a class="direction" href="#About" onclick="redirect(this)">
+				<div class="dirName">About Me</div>
+			</a>
+			<a class="direction" href="#Projects" onclick="redirect(this)">
+				<div class="dirName" >Projects</div>
+			</a>
+			<a class="direction" href="#Footprint" onclick="redirect(this)">
+				<div class="dirName">Footprint</div>
+			</a>
+			<a class="direction" href="#Blog" onclick="redirect(this)">
+				<div class="dirName">Blog</div>
+			</a>			
+			<a class="direction" href="#Contact" onclick="redirect(this)">
+				<div class="dirName">Contact</div>
+			</a>
 		</div>
 	</div>
 

@@ -1,9 +1,61 @@
 @import url(http://fonts.googleapis.com/css?family=Varela+Round);
 
+#placelist {
+    height: 200px;
+    width: 900px;
+    margin: 70px auto 20px;
+    background-color: rgba(255,255,255,0.4);
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.places_navi {
+    height: 150px;
+    width: 150px;
+    margin: 20px 0px 0px 20px;
+    display: inline-block;
+}
+
+.nav_img_container {
+    display: block;
+    height: 148px;
+    width: 148px;
+    text-align: center;
+    border: 2px solid rgba(255,255,255,0);
+}
+
+.nav_img_container:hover {
+    background-color: rgba(255,255,255,0.4);
+}
+
+.nav_img_container.selected_img {
+    border: 2px solid rgba(255,255,255,0.7);
+}
+
+.places_navi_thumbnail {
+    max-height: 148px;
+    max-width: 148px;
+    vertical-align: middle;
+}
+
+.place {
+    display: block;
+    height: 20px;
+    width: inherit;
+    text-align: center;
+}
+
+#map {
+    height: 350px;
+    width: 900px;
+    margin: 20px auto;
+}
+
 .slides {
     padding: 30px;
     background-color: rgba(255,255,255,0.4);
-    width: 900px;
+    width: 840px;
     height: 600px;
     display: block;
     margin: 0 auto;
@@ -33,7 +85,7 @@
     top: 0;
     opacity: 0;
     height: 600px;
-    width: 900px;
+    width: 840px;
     display: block;
     text-align: center;
     position: absolute;
@@ -83,7 +135,7 @@
 
 .nav label:hover { opacity: 1; }
 
-.nav .next { right: 0; }
+.nav .next { right: 30px; }
 
 input:checked + .slide-container  .slide {
     opacity: 1;
@@ -96,7 +148,7 @@ input:checked + .slide-container  .slide {
 input:checked + .slide-container .nav label { display: block; }
 
 .nav-dots {
-    width: 900px;
+    width: 840px;
     bottom: 9px;
     height: 11px;
     display: block;

@@ -1,33 +1,31 @@
-body, .main{
+body {
 	width: 100%;
 	height: 100%;
 	margin: 0px;
-	background: url("../images/squirrel.jpg") no-repeat top left;
-	background-size: 100%;
-	background-attachment: fixed;
+	-webkit-background-size: 100px 100px !important;
+  	-moz-background-size: 100px 100px !important;
+  	-o-background-size: 100px 100px !important;
+	background-size: 100px 100px !important;
 }
 
-body, .footprint {
-	width: 100%;
-	height: 100%;
-	margin: 0px;	
-	background: url("../images/birds.jpg") no-repeat top left;
-	background-size: 100%;
-	background-attachment: fixed;
+body, .main{
+	background: white no-repeat center center fixed !important;
 }
 
 body, .projects {
-	width: 100%;
-	height: 100%;
-	margin: 0px;
-	background: url("../images/woods.jpg") no-repeat top left;
-	background-size: 100%;
-	background-attachment: fixed;
+	background: url("../images/boy.jpg") no-repeat center center fixed !important;
 }
 
-body, .other{
-	margin: 0px;
-	background: white;
+body, .footprint {
+	background: url("../images/lighthouse.jpg") no-repeat center center fixed !important;
+}
+
+body, .blog {
+	background: url("../images/lighthouse.jpg") no-repeat center center fixed !important;
+}
+
+body, .contact{
+	background: url("../images/boy.jpg") no-repeat center center fixed !important;
 }
 
 a:link {
@@ -38,8 +36,8 @@ a:link {
 	margin: auto;
 }
 
-.image-link {
-	position: absolute;
+.background-image-link {
+	position: fixed;
 	bottom: 10px;
 	right: 10px;
 	width: 150px;
@@ -49,25 +47,37 @@ a:link {
 }
 
 #header_container {
-	display: block;
+	position: fixed;
+	top: 0px;
+	display: inline-block;
 	width: 100%;
 	height: 50px;
 	text-align: center;
+	background-color: rgba(200,200,200,0.9);
+	z-index: 4;
 }
 
 #header {
-	width: 100%;
+	width: 80%;
 	height: 50px;
-	background: white;
-	opacity: 0.4;
+	margin: auto;
 }
 
 .direction {
-	width: 16%;
-	height: 46px;
-	padding: 10px 0px;
+	width: 20%;
+	height: 38px;
+	padding: 12px 0px 0px 0px;
 	font-family: sans-serif;
 	display: inline-block;
+	float: left;
+}
+
+.direction.selected_dir {
+	background-color: rgba(255,255,255,0.6);
+}
+
+.direction:hover:not(.selected_dir) {
+	background-color: rgba(255,250,255,0.4);
 }
 
 .dirName {
@@ -77,80 +87,43 @@ a:link {
 }
 
 #content {
-	width: 80%;
+	width: 100%;
+	margin: 70px 0px 0px;
+	position: relative;
+}
+
+#content_origin {
+	width: 900px;
 	min-height: 700px;
-	margin: auto;
-}
-
-.intro {
-	width: 600px;
-	height: 400px;
-	background: white;
-	opacity: 0.6;
-	text-align: center;
-	margin: 30px auto;
-	font-size: 25px;
-	font-family: sans-serif;
-	border-radius: 30px;
-}
-
-#map {
-	height: 350px;
-	width: 960px;
-	margin: 20px auto;
-}
-
-#blog_container {
-	width: 100%;
-	background: blue;
-	display: block;
-	overflow: auto;
-}
-
-#timeline {
-	width: 50px;
-	height: 800px;
-	background: green;
-	display: block;
-	position: fixed;
-}
-
-#blog_wrapper {
-	width: 80%;
-	background: white;
-	display: block;
-	position: absolute;
-	left: 175px;
-}
-
-.blog {
-	width: 75%;
-	height: 200px;
-	margin: 20px;
-}
-
-.blog_time {
-	width: 100%;
-	height: 30px;
-	background: yellow;
-}
-
-.blog_content {
-	height: 100%;
-}
-
-.blog_image {
-	height: 100%;
-}
-
-.blog_discription {
-
+	margin: 70px auto;
+	position: relative;
 }
 
 #footer {
-	width: 100%;
-	color: white;
-	text-align: center;
-	font-family: sans-serif;
+    width: 100%;
+    color: rgba(170,170,170,1);
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.href:hover {
+    background-color: rgba(255,255,255,0.7);
+}
+
+.href:visited {
+    text-decoration: none; 
+    color: blue;
+}
+
+.contact_container {
+    width: 760px;
+    height: 600px;
+    margin: 180px auto;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+    font-family: sans-serif;
 }
 

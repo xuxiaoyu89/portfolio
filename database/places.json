@@ -26,6 +26,198 @@
             "description": "trip to the west.",
             "pictures": 4,
             "link": ""
+        },
+        {
+            "place":"kenai_fjords", 
+            "lat": "60.0407146",
+            "lng": "-149.8318334",
+            "time": "2014-8-24",
+            "description": "trip to Alaska, with Qinhua.",
+            "pictures": 8,
+            "link": ""
+        },
+        {
+            "place":"denali", 
+            "lat": "63.113118",
+            "lng": "-151.2411208",
+            "time": "2014-8-25",
+            "description": "trip to Alaska, with Qinhua.",
+            "pictures": 12,
+            "link": ""
+        },
+        {
+            "place":"death_valley", 
+            "lat": "36.5053934",
+            "lng": "-117.0815965",
+            "time": "2013-6-5",
+            "description": "trip to death_valley",
+            "pictures": 5,
+            "link": ""
+        },
+        {
+            "place":"zion", 
+            "lat": "37.2982064",
+            "lng": "-113.0284892",
+            "time": "2013-6-7",
+            "description": "trip to zion",
+            "pictures": 6,
+            "link": ""
+        },
+        {
+            "place":"guiyang", 
+            "lat": "26.5712046",
+            "lng": "106.7192861",
+            "time": "2015-1-6",
+            "description": "Visit family in Guiyang",
+            "pictures": 2,
+            "link": ""
+        },
+        {
+            "place":"acadia", 
+            "lat": "44.3385559",
+            "lng": "-68.2755233",
+            "time": "2012-9-2",
+            "description": "trip to acadia",
+            "pictures": 5,
+            "link": ""
+        },
+        {
+            "place":"brucecanyon", 
+            "lat": "37.5930377",
+            "lng": "-112.1892782",
+            "time": "2013-6-2",
+            "description": "trip to the west.",
+            "pictures": 5,
+            "link": ""
+        },
+        {
+            "place":"capitalreef", 
+            "lat": "38.3669703",
+            "lng": "-111.2636929",
+            "time": "2013-6-6",
+            "description": "trip to the west.",
+            "pictures": 7,
+            "link": ""
+        },
+        {
+            "place":"evergrade", 
+            "lat": "25.2866155",
+            "lng": "-80.9008396",
+            "time": "2012-1-4",
+            "description": "trip to florida.",
+            "pictures": 5,
+            "link": ""
+        },
+        {
+            "place":"grandcanyon", 
+            "lat": "36.1069652",
+            "lng": "-112.1151859",
+            "time": "2013-6-3",
+            "description": "trip to the west.",
+            "pictures": 3,
+            "link": ""
+        },
+        {
+            "place":"grandteton", 
+            "lat": "43.7904282",
+            "lng": "-110.6839514",
+            "time": "2012-6-3",
+            "description": "trip in 2012 summer.",
+            "pictures": 5,
+            "link": ""
+        },
+        {
+            "place":"yellowstone", 
+            "lat": "44.427963",
+            "lng": "-110.5906437",
+            "time": "2012-6-3",
+            "description": "trip in 2012 summer.",
+            "pictures": 7,
+            "link": ""
+        },
+        {
+            "place":"montauk", 
+            "lat": "41.0711581",
+            "lng": "-71.8619779",
+            "time": "2016-1-3",
+            "description": "montauk",
+            "pictures": 3,
+            "link": ""
+        },
+        {
+            "place":"pinnicle", 
+            "lat": "36.4905655",
+            "lng": "-121.1846812",
+            "time": "2013-6-3",
+            "description": "trip to the west.",
+            "pictures": 5,
+            "link": ""
+        },
+        {
+            "place":"joshuatree", 
+            "lat": "33.873415",
+            "lng": "-115.903181",
+            "time": "2014-4-3",
+            "description": "2014 spring break",
+            "pictures": 4,
+            "link": ""
+        },{
+            "place":"NYU", 
+            "lat": "40.7295134",
+            "lng": "-73.9986496",
+            "time": "2014-1-20",
+            "description": "New York University",
+            "pictures": 5,
+            "link": ""
+        },{
+            "place":"virginislands", 
+            "lat": "18.3424047",
+            "lng": "-64.7507646",
+            "time": "2016-1-13",
+            "description": "honeymoon",
+            "pictures": 6,
+            "link": ""
+        },{
+            "place":"sequoia", 
+            "lat": "36.4863668",
+            "lng": "-118.5679403",
+            "time": "2013-6-3",
+            "description": "trip to the west.",
+            "pictures": 4,
+            "link": ""
+        },{
+            "place":"lakeplacid", 
+            "lat": "44.2843587",
+            "lng": "-74.0037255",
+            "time": "2013-1-20",
+            "description": "iceclimbing and skiing in lake placid",
+            "pictures": 4,
+            "link": ""
+        },{
+            "place":"kingscanyon", 
+            "lat": "36.8878548",
+            "lng": "-118.5573364",
+            "time": "2013-6-3",
+            "description": "trip to the west.",
+            "pictures": 1,
+            "link": ""
+        },{
+            "place":"greatsmoky", 
+            "lat": "35.6117644",
+            "lng": "-83.4917336",
+            "time": "2013-4-3",
+            "description": "trip to the great smoky.",
+            "pictures": 5,
+            "link": ""
+        },
+        {
+            "place":"SBU", 
+            "lat": "40.9123761",
+            "lng": "-73.1255776",
+            "time": "2013-6-3",
+            "description": "Stony Brook University",
+            "pictures": 3,
+            "link": ""
         }
     ] 
 }

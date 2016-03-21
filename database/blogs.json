@@ -1,0 +1,104 @@
+{
+    "blogs":[
+        {
+            "title": "honeymoon in virgin islands",
+            "time": "2016-1-12",
+            "place": "virgin islands",
+            "tag": "life",
+            "imgs": [
+                "../images/blog/honeymoon.jpg"
+                ],
+            "content": "We spent a week in St John. Love the sunset, the beautiful beaches, the wild animals, and the people, hates the mosquitoes."
+        },
+        {
+            "title": "Getting married!!!!!!!!!!!!!!!!!!!!!",
+            "time": "2015-12-22",
+            "place": "city hall",
+            "tag": "life",
+            "imgs": [
+                "../images/blog/married.jpg"
+                ],
+            "content": "On December 22, 2015, I got married in New York City Hall"
+        },
+        {
+            "title": "Graduated from NYU",
+            "time": "2015-12-20",
+            "place": "New York University",
+            "tag": "study",
+            "imgs": [
+                "../images/blog/cims.jpg"
+                ],
+            "content": "On December 20, 2015, I graduated from CS department of Courant Institute."
+        },
+        {
+            "title": "Started summer intern in Yahoo",
+            "time": "2015-6-1",
+            "place": "Yahoo, Sunnyvale",
+            "tag": "work",
+            "imgs": [
+                "../images/blog/intern.jpg"
+                ],
+            "content": "On June 1st, 2015, I started my internship in Yahoo. This is the first time I attent the internal meeting in Yahoo. I was so lucky that I had the chance to speak with Marissa Mayer, the CEO of Yahoo."
+        },
+        {
+            "title": "Chang Wang Noodle (肠旺面)",
+            "time": "2015-1-6",
+            "place": "Guiyang, China",
+            "tag": "food",
+            "imgs": [
+                "../images/places/guiyang/0.jpg"
+                ],
+            "content": "You may wonder why my site is called changwangnoodle.com? Chang Wang Noodle is a very popular kind of noodle soup in Guiyang, China. The name Chang Wang stands for two main ingredients(intestine and blood), but it also has the meaning of always have good health and wealth. People usually have it for breakfast and lunch, even though it is very spicy. There are many places in China where people love spicy food, but only in Guiyang, people have them even for breakfast. When I visited Guiyang at the beginning of 2015, I went to the most famous Chang Wang Noodle resterant in Guiyang, and personally tried one. It was really spicy, but definitely the most delicious noodle I have ever had."
+        },
+        {
+            "title": "New York Auto Show",
+            "time": "2014-4-20",
+            "place": "Jacob Javits Convention Center, New York",
+            "tag": "life",
+            "imgs": [
+                "../images/blog/autoshow.jpg"
+                ],
+            "content": "New York Auto Show in April 2014. It was the first date with my wife. We also went to the top of the empire state building that night."
+        },
+        {
+            "title": "Where is my car?",
+            "time": "2013-2-9",
+            "place": "Schomburg, Stony Brook University",
+            "tag": "life",
+            "imgs": [
+                "../images/blog/bigsnow.jpg"
+                ],
+            "content": "This is the biggest snow storm I have ever seen. After one night of storm, all cars in the parking lot were under 2 to 3 feet of snow. It took me a whole afternoon to dig my car out, with help of my friends."
+        },
+        {
+            "title": "iceclimbing in Lake Placid",
+            "time": "2013-2-1",
+            "place": "Lake Placid",
+            "tag": "travel",
+            "imgs": [
+                "../images/blog/iceclimbing.jpg"
+                ],
+            "content": "We climbed an icefall beside Road 73 near Lower Cascade Lake. It was really cold out there, the temperature was -10 degrees fahrenheit, and the ice was as hard as stone. It was extemly hard to dig into the ice, so even though we took a relatively easy route, it was still very hard to climb."
+        },
+        {
+            "title": "Morning Grory, Yellow Stone",
+            "time": "2012-6-21",
+            "place": "Yellow Stone National Park",
+            "tag": "travel",
+            "imgs": [
+                "../images/blog/morningglory.jpg"
+                ],
+            "content": "Morning Glory Pool is a hot spring in the Upper Geyser Basin of Yellowstone National Park. The distinct color of the pool is due to bacteria which inhabit the water. On a few rare occasions the Morning Glory Pool has erupted as a geyser, usually following an earthquake or other nearby seismic activity. Visited in the summer of 2012 with four other friends."
+        },
+        {
+            "title": "West Lake Fish (西湖醋鱼)",
+            "time": "2011-4-18",
+            "place": "Lou Wai Lou, Hangzhou, China",
+            "tag": "food",
+            "imgs": [
+                "../images/blog/xihufish.jpg"
+                ],
+            "content": "One of the most famous dishes in Hangzhou. Use fresh fish from West Lake, 3 minutes in boiled soup, then served with special source made of soy source, vinage, wine, ginger, sugar. We ordered it in the famous resterant Lou Wai Lou (楼外楼) near West Lake, Hangzhou."
+        }
+    ]
+}

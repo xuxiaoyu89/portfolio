@@ -1,0 +1,90 @@
+        {
+            "place":"arcadia", 
+            "lat": "37.7458525",
+            "lng": "-119.5336292",
+            "time": "2012-9-2",
+            "description": "trip to arcadia",
+            "pictures": 5,
+            "link": ""
+        },
+        {
+            "place":"brucecanyon", 
+            "lat": "37.7458525",
+            "lng": "-119.5336292",
+            "time": "2013-6-2",
+            "description": "trip to the west.",
+            "pictures": 5,
+            "link": ""
+        },
+        {
+            "place":"capitalreef", 
+            "lat": "37.7458525",
+            "lng": "-119.5336292",
+            "time": "2013-6-6",
+            "description": "trip to the west.",
+            "pictures": 7,
+            "link": ""
+        },
+        {
+            "place":"evergrade", 
+            "lat": "37.7458525",
+            "lng": "-119.5336292",
+            "time": "2012-1-4",
+            "description": "trip to florida.",
+            "pictures": 5,
+            "link": ""
+        },
+        {
+            "place":"grandcanyon", 
+            "lat": "37.7458525",
+            "lng": "-119.5336292",
+            "time": "2013-6-3",
+            "description": "trip to the west.",
+            "pictures": 5,
+            "link": ""
+        },
+        {
+            "place":"yosemite", 
+            "lat": "37.7458525",
+            "lng": "-119.5336292",
+            "time": "2013-6-3",
+            "description": "trip to the west.",
+            "pictures": 5,
+            "link": ""
+        },
+        {
+            "place":"yosemite", 
+            "lat": "37.7458525",
+            "lng": "-119.5336292",
+            "time": "2013-6-3",
+            "description": "trip to the west.",
+            "pictures": 5,
+            "link": ""
+        },
+        {
+            "place":"yosemite", 
+            "lat": "37.7458525",
+            "lng": "-119.5336292",
+            "time": "2013-6-3",
+            "description": "trip to the west.",
+            "pictures": 5,
+            "link": ""
+        },
+        {
+            "place":"yosemite", 
+            "lat": "37.7458525",
+            "lng": "-119.5336292",
+            "time": "2013-6-3",
+            "description": "trip to the west.",
+            "pictures": 5,
+            "link": ""
+        },
+        {
+            "place":"yosemite", 
+            "lat": "37.7458525",
+            "lng": "-119.5336292",
+            "time": "2013-6-3",
+            "description": "trip to the west.",
+            "pictures": 5,
+            "link": ""
+        }

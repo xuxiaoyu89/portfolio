@@ -1,11 +1,12 @@
 portfolioControllers.controller("FootprintCtrl",
 	function($scope, $log){
-        var createHtmlELement = function (type, id, className){
-            elem = document.createElement(type);
-            elem.className = className;
-            elem.id = id;
-            return elem;
-        };
+        var infowindow = null;
+        var clearClicked = function() {
+            var imgs = document.getElementsByClassName("nav_img_container");
+            for (var i=0; i<imgs.length; i++){
+                imgs[i].classList.remove("selected_img");
+            }
+        }
 
         var showImage = function (elem) {
             var slides = document.getElementById('slides');
@@ -53,11 +54,48 @@ portfolioControllers.controller("FootprintCtrl",
             slides.appendChild(nav_dots);
         };
 
-        var addClickListener = function (elem) {
-            elem.addListener('click', function(){
-                showImage(elem);
+        var addClickListener = function (marker, map, place) {
+            marker.addListener('click', function(){
+                var latLng = marker.getPosition();
+                map.setCenter(latLng);
+                map.setZoom(6);
+                if (infowindow) {
+                    infowindow.close();
+                }
+                //create info windows for the marker
+                var string = place.place + '<br>' + place.time + '<br>' + place.description;
+                infowindow = new google.maps.InfoWindow({
+                    content: string,
+                    disableAutoPan: true
+                });
+
+                infowindow.open(map, marker);
+                showImage(marker);
             });
         };
+
+        var addNaviListener = function(elem, map, marker, place) {
+            elem.addEventListener("click", function(){
+                clearClicked();
+                elem.classList.add("selected_img");
+                showImage(marker);
+                //center the map into the marker;
+                var latLng = marker.getPosition();
+                map.setCenter(latLng); 
+                map.setZoom(6);
+                if (infowindow) {
+                    infowindow.close();
+                }
+                //create info windows for the marker
+                var string = place.place + '<br>' + place.time + '<br>' + place.description;
+                infowindow = new google.maps.InfoWindow({
+                    content: string,
+                    disableAutoPan: true
+                });
+
+                infowindow.open(map, marker);
+            });
+        }
 
 		$scope.msg = "hello, welcome to my world!";
 		var target = document.getElementById('page-body');
@@ -69,17 +107,35 @@ portfolioControllers.controller("FootprintCtrl",
             if ( request.readyState === 4 && request.status === 200 ) {
                 var response = request.responseText;
                 var places = JSON.parse(response).places;
+                var navi = document.getElementById("placelist");
                 var map = new google.maps.Map(document.getElementById('map'), {
                   center: {lat: 35.096123, lng: -180.00000},
-                  zoom: 2
+                  zoom: 2,
+                  scrollwheel: false
                 });
 
                 for (var i=0; i < places.length; i++){
                     place = places[i];
                     //var latlng = new google.maps.LatLng(parseFloat(place.lat),parseFloat(place.lng));
                     var latLng = {lat: parseFloat(place.lat), lng: parseFloat(place.lng)};
+                    //create the navigator div
+                    var places_navi = createHtmlELement("div", null, "places_navi");
+                    var nav_img_container = createHtmlELement("div", null, "nav_img_container");
+                    var imgalign = createHtmlELement("div", null, "imgalign");
+                    var img = createHtmlELement("img", null, "places_navi_thumbnail");
+                    img.src = "../images/places/" + place.place + "/" + 0 + ".jpg";
+                    nav_img_container.appendChild(imgalign);
+                    nav_img_container.appendChild(img);
+                    var name = createHtmlELement("div", null, "place");
+                    name.innerHTML = place.place;
+                    places_navi.appendChild(nav_img_container);
+                    places_navi.appendChild(name);
+                    navi.appendChild(places_navi);
+                    var marker_img = '../images/pin.png';
+                    //create markers in google map
                     var marker = new google.maps.Marker({
                         position: latLng,
+                        icon: marker_img,
                         map: map,
                         title: place.place,
                         pictures: place.pictures
@@ -87,11 +143,10 @@ portfolioControllers.controller("FootprintCtrl",
                     if (i == 0){
                         showImage(marker);
                     }
-                    addClickListener(marker);
+                    addClickListener(marker, map, place);
+
+                    addNaviListener(nav_img_container, map, marker, place);
                 }
-
-
-
             }
         }
 	}
